@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>STEP5 : 条件分岐② </title>
+        <meta name = "description" content = "反応">
+        <link rel = "stylesheet" href = "template2.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第5章　反応</span5>　　<span4>STEP5：条件分岐②</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題のコード</h2>
+                <img src = "reaction5.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "reaction5-2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>プログラムを実行結果の図になるようにしたい。</li>
+                        <li>(1) iの条件式に当てはまるものを解答欄から選択してください。</li>
+                        <li>(2) jの条件式に当てはまるものを解答欄から選択してください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        どこに条件式が適用されているのかに注目してみよう。<br>
+                        実行結果を見ると、条件式が真の場合に<span1>赤く</span1>塗られていることがわかる<br>
+                        <span1>赤</span1>が適用されているのは、iとj共に値が<span1>3,4,5,6</span1>の時である。<br>
+                        iとjの初期値が<span2>0</span2>であることを忘れずに！<br>
+                        <br>
+                        ※　xが0以上、9未満という条件式を書くときには、<br>
+                        <span2>0 <= x < 9</span2><br>
+                        では、動作してくれない！<br>
+                        論理演算子を用いて、記述しなければならない<br>
+                        <span2>0 <= x && x < 9</span2>
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for = "text1">(1)<input size = "3" type = "text" name = "answer" readonly class = "answern"><input name = "Judgement" value = "" class = "J" disabled></label>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ア";'><span6>ア： 2 < i && i < 7</span6>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "イ";'><span6>イ： 2 < i < 7</span6><br>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ウ";'><span6>ウ： i < 3 && i > 7</span6>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "エ";'><span6>エ： 2 < i || i < 7</span6>
+                        <label for="text2">(2)<input size = "3" type = "text" name = "answer" readonly class = "answern"><input name="Judgement" value="" class="J" disabled></label>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ア";'><span6>ア： 2 < j && j < 7</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "イ";'><span6>イ： 2 < j < 7</span6><br>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ウ";'><span6>ウ： j < 3 && j > 7</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "エ";'><span6>エ： 2 < j || j < 7</span6>
+            
+                        
+                       
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "reaction6.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "ア">
+                            <input type = "hidden" name = "Canswer" value = "ア">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       </script>
+    </body>
+
+
+
+</html>

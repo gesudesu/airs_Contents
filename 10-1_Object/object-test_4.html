@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP1 : クラスを使ってみよう② </title>
+        <meta name = "description" content = "STEP1 : 反応">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP1：クラスを使ってみよう②</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "object_question_4.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左側の図を参考に以下の設問に答えてください</li>
+                        <li>・JitterBugクラスの内容を作ります。</li>
+                        <li>・JitterBugクラス内で使用する変数を定義します。</li>
+                        <li>(1) float型の変数xを宣言してください</li>
+                        <li>(2) float型の変数yを宣言してください</li>
+                        <li>(3) int型の変数diameterを宣言してください</li>
+                        <li>(4) float型の変数speedを宣言し、初期値2.5で定義してください</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        例　int型の変数aを宣言する<br>
+                      　int a;<br>
+                      例　float型の変数bを宣言し、同時に初期値1.5で定義する<br>
+                      　float b = 1.5;<br>
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(4)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "object-test5.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "float x;">
+                            <input type = "hidden" name = "Canswer" value = "float y;">
+                            <input type = "hidden" name = "Canswer" value = "int diameter;">
+                            <input type = "hidden" name = "Canswer" value = "float speed = 2.5;">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>

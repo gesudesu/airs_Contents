@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+html{
+    font-size:100%; 
+}
+
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height:1.7;
+    color:black;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    text-align:center;
+    font-size:30px;
+}
+
+
+#sample{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+/*　判定結果の表示　*/
+.J{
+    width: 100px;
+    border:none;
+    font-size: 25px;
+    color: red;
+    margin-top: -10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* 質問画像　*/
+question{
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+/*　質問文　*/
+questionsentence{
+    width: 52.5%;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+span{
+    font-size: 20px;
+}
+
+/*　コンテンツ部分　*/
+.test-contents{
+    display:flex;
+    justify-content: space-between;
+}
+
+/*　問題の画像　*/
+.q1{
+    max-height:60%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*　実行画像1 */
+.q2{
+    max-height:50%;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+/*　リスト部分　*/
+li{
+    margin-bottom: 5px;
+}
+
+/*　リストの中身　*/
+ul{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-top:20px;
+    width: 650px;
+}
+
+/*　解答部分　*/
+label{
+    display: block;
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+/*　解答の入力フォーム　*/
+input{
+  margin-top: -60px;
+  width:600px;
+  height:30px;
+  font-size: 1.5rem;
+  border:2px solid black;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+
+
+/*　ヒントボタン　*/
+p0{
+    background-color: red;
+    width: 180px;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+/* それぞれのボタンの場所指定　*/
+.pop-up{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 550px;
+}
+
+/*　ヒントボタンにカーソルを合わせて時の処理　*/
+p0:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*　ヒントの表示・非表示　*/
+.hintcontents{
+    display: none;
+}
+
+/*　ヒントの内容　*/
+.hint{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    width:500px;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+span{
+    font-size:20px;
+}
+
+/*　クラス名の色変更　*/
+span1{
+    font-weight: bold;
+    color: red;
+}
+
+/*　Fruit名の変更　*/
+span2{
+    font-weight: bold;
+    color: blue;
+}
+
+/*　解答表示欄の消去　*/
+.answer input{
+    border-color: white;
+}
+
+.a{
+    width: 500px;
+    margin-left: 120px;
+    margin-top: -55px;
+}
+
+/*　判定ボタン　*/
+.button{
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 120px;
+    height: 70px;
+    margin-top: -100px;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+}
+
+/*　正解表示ボタン　*/
+.button3{
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 160px;
+    height: 70px;
+    margin-top: px;
+    margin-left: 45px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+}
+
+/*　正解表示ボタンにカーソルを合わせた時の処理　*/
+.button3:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*　判定ボタンにカーソルを合わせた時の処理　*/
+.button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*　解答の位置　*/
+.answer{
+    margin-top: 5px;
+    margin-left: -140px;
+}
+
+/*　次の問題ボタン　*/
+.button1{
+    padding: 18px 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background: blueviolet;
+    border: 1px solid #8a2be2;
+    text-decoration: none;
+    margin-left: 350px;
+    
+}
+
+/*　次の問題ボタンにカーソルを合わせた時の処理　*/
+.button1:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*　解説ボタンの表示・非表示　*/
+.explanation{
+    display: none; 
+}
+
+/*　解説ボタン　*/
+.button2{
+    padding: 18px 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background: blueviolet;
+    border: 1px solid blueviolet; 
+    text-decoration: none;
+    margin-top:50px;
+    margin-left: -110px;
+    
+}
+
+/*　解説ボタンにカーソルを合わせた時の処理　*/
+.button2:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*　ボタン/正解表示の欄の表示・非表示　*/
+.c{
+    display: none;   
+}
+
+/*　ボタン/正解表示の欄の位置修正　*/
+.d{
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 550px;
+}

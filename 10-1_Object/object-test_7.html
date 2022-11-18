@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP1 : クラスを使ってみよう⑤ </title>
+        <meta name = "description" content = "STEP1 : 反応">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP1：クラスを使ってみよう⑤</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "object_question_7.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左側の図を参考に以下の設問に答えてください</li>
+                        <li>・draw関数内で使う、JitterBugクラスのパラメータを変化させるための処理を作ります。</li>
+                        <li>・JitterBugクラスで利用できる関数move();を定義します。</li>
+                        <li>　この関数はjit.move();やbug.move();のような形で呼び出して使用できます。</li>
+                        <li>(1) 変数xの値を、-speedからspeedの範囲内でランダムに増加させてください</li>
+                        <li>(2) 変数yの値を、-speedからspeedの範囲内でランダムに増加させてください</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        　この関数move();は、後ほどdraw関数内でjit.move();やdraw.move();のような形で呼び出して使用します。<br>
+                      関数名(ここではmove)は任意に付けることができ、<br>
+                      <span2>オブジェクト名</span2>.<span3>関数名();</span3>　　のように記述して使用します。<br>
+                       例　オブジェクトappleに対し、売り場に陳列するために座標を与える関数display();を実行する<br>
+                       　<span2>apple</span2>.<span3>display();</span3><br>
+                       <br>
+                       この問題で記述するのは、「move();が呼び出された際、オブジェクトが持つ値をどのように変化させるか」という処理だけです。<br>
+                       なお、ランダムな値を使用したい場合はrandom();を利用すると便利です。<br>
+                       x = random(値の下限, 値の上限);
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "object-test8.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "x += random(-speed, speed);">
+                            <input type = "hidden" name = "Canswer" value = "y += random(-speed, speed);">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>

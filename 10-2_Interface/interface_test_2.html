@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP2 : インタフェースを使ってみよう② </title>
+        <meta name = "description" content = "STEP2 : インタフェース">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template1.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP2：インタフェースを使ってみよう②</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "interface_question_2.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左側の図を参考に以下の設問に答えてください</li>
+                        <li>・にわとりを描画するクラス、Chickenにインタフェースを実装します。</li>
+                        <li>・問題簡略化のため、chickenクラスの中身は既に用意されているものとします。</li>
+                        <li>(1) Birdインタフェースが実装されたクラス、Chickenを定義してください。</li>
+                    </ul>
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+        
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        インタフェースの実装は以下のように行います<br>
+                      class <span1>クラス名</span1> implements <span2>インタフェース名</span2><br>
+                      例　Foodインタフェースを実装したクラスFruitを定義したい場合<br>
+                      class <span1>Fruit</span1> implements <span2>Food</span2>{<br>
+                        //クラスの中身をここで記述<br>
+                      }<br>
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<span id="sample">　</span></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                                        
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "interface_test_3.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "class Chicken implements Bird">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>

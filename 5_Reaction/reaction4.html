@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>STEP4 : 条件分岐① </title>
+        <meta name = "description" content = "STEP1 : 反応">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第5章　反応</span5>　　<span4>STEP4：条件分岐①</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題のコード</h2>
+                <img src = "reaction4.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "reaction4-2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左図は、線を20本描画する（11個本目からの線を赤で描く）プログラムです。</li>
+                        <li>(1) int型の変数iを宣言し、線が20本描画されるようにfor文の中を埋めてください。</li>
+                        <li>(2) 10本目からの線を赤で描くように、条件式の中を埋めてください。</li>
+                        <li>(3) 線を赤く描画するプログラムを書いてください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        (1)　第4章の内容のため、省略<br>
+                            
+                        (2)　ifは、以下のように書く<br>
+                            if(条件式){<br>
+                            　　　　条件式が<span1>真(TRUE)</span1>の時に実行する<br>
+                            }else{<br>
+                                　　条件式が<span2>偽(FALSE)</span2>の時に実行する<br>
+                            }<br>
+                            条件式が偽(FALSE)の時に何もしない場合には、else以降は省略可能<br>
+                        (3)　線の色は、<span1>stroke</span1>によって変更する<br>
+                        stroke(<span1>RED</span1>, <span3>GREEN</span3>, <span2>BLUE</span2>);
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "reaction5.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "int i = 1; i < 20; i++">
+                            <input type = "hidden" name = "Canswer" value = "i > 10">
+                            <input type = "hidden" name = "Canswer" value = "stroke(255, 0, 0);"
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       </script>
+    </body>
+
+
+
+</html>

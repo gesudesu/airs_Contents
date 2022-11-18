@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP1 : クラスを使ってみよう⑨ </title>
+        <meta name = "description" content = "STEP1 : 反応">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP1：クラスを使ってみよう⑨</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "object_question_11.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "object_question_11_2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左側の図を参考に以下の設問に答えてください</li>
+                        <li>(1) オブジェクトjitに対しmove();関数を実行し、xとyの値を更新してください。
+                        </li>
+                        <li>(2) オブジェクトjitに対しdisplay();関数を実行し、jitの持つ値を利用して円を描写してください
+                        </li>
+                        <li>(3) オブジェクトbugについても同様に、値を更新してください</li>
+                        <li>(4) オブジェクトbugについても同様に、円を描写してください</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        生成したオブジェクトに対し、クラスJitterBugの中に定義しておいた関数move();とdisplay();を利用します。<br>
+                        「xとyの値を更新する処理」「円を描写する処理」は既にそれぞれmove();とdisplay();内に記述されているため、<br>
+                        ここでは「関数move();を呼び出す」「関数display();を呼び出す」記述だけすればよいことになります。<br>
+                        関数を呼び出す場合は、<br>
+                        <span2>オブジェクト名</span2>.<span3>関数名();</span3>　　のように記述して使用します。<br>
+                       例　オブジェクトappleに対し、売り場に陳列するために座標を与える関数display();を実行する<br>
+                       　<span2>apple</span2>.<span3>display();</span3><br>
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(4)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "次の問題へのURL">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "jit.move();">
+                            <input type = "hidden" name = "Canswer" value = "jit.display();">
+                            <input type = "hidden" name = "Canswer" value = "bug.move();">
+                            <input type = "hidden" name = "Canswer" value = "bug.display();">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>

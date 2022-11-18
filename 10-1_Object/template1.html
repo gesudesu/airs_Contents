@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP2 : マウスを使う処理② </title>
+        <meta name = "description" content = "STEP1 : 反応">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template1.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第5章　反応</span5>　　<span4>STEP2：マウスを使う処理②</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "reaction2.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "reaction2-2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左図は、反応①に1文追加してマウスの軌跡が残らないようにしたプログラムです。</li>
+                        <li>(1) 実行結果を参考に、マウスの軌跡が残らないように空欄を埋めてください。</li>
+                    </ul>
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+        
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                      drawブロックは、<span1>繰り返し実行する</span1><br>
+                      マウスの軌跡が残らないようにしたい<br>
+                      →<span1>drawが実行される度に背景色を繰り返し変更すれば良い</span1><br>
+                      実行結果を見ると背景が黒くなっているため、背景を黒に指定する
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<span id="sample">　</span></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                                        
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "reaction3.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "background(0);">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
