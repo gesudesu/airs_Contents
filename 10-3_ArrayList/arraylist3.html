@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP3 : ArrayListを使ってみよう③ </title>
+        <meta name = "description" content = "STEP3 : ArrayList">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template1.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP3：ArrayListを使ってみよう③</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "arraylist3.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>・Owl型のArrayListを宣言します。</li>
+                        <li>・配列の名前は"arrayList"にしてください。</li>
+                        <li>(1) 上記を参考に、ArrayListの宣言を行ってください。</li>
+                    </ul>
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+        
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                      ArrayListの宣言は、以下のように行います。<br>
+                      ArrayList&lt;<span1>型</span1>&gt; <span2>配列の名前</span2> = new ArrayList&lt;<span1>型</span1>&gt;();<br>
+                      例　Fruit型のArrayList、fruitsを宣言する<br>
+                      ArrayList&lt;<span1>Fruit</span1>&gt; <span2>fruits</span2> = new ArrayList&lt;<span1>Fruit</span1>&gt;();
+                     </p>
+
+                   </div>
+                </div>
+
+                <form name = "answerForm">
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<span id="sample">　</span></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                                        
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "arraylist4.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "ArrayList<Owl> arrayList = new ArrayList<Owl>();">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
