@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP4 : HashMapを使ってみよう⑥ </title>
+        <meta name = "description" content = "STEP4 : HashMap">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP4：HashMapを使ってみよう⑥</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "hashmap6.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "hashmap6_2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>・Owl型のオブジェクト、owlを生成し、arrayListの内容を順番に読み込みます。</li>
+                        <li>(1) Owl型のオブジェクトowlを生成し、同時にarrayListのi番目の要素を代入してください。</li>
+                        <li>(2) i番目の要素が代入されたowlを表示してください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        arrayListの中身を取り出すには、<span2>get(i);</span2>を利用します。<br>
+                        例　[3,5,0,3]が格納されたArrayList、"<span1>numbers</span1>"の2番目の要素を取り出したい<br>
+                        println(<span1>numbers</span1><span2>.get(2);</span2>);<br>
+                        この例では2番目の要素「5」が取り出され、コンソールに表示されます。
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "次の問題のURL">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "Owl owl = arrayList.get(i);">
+                            <input type = "hidden" name = "Canswer" value = "owl.display();">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
