@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP1 : 配列⑥ </title>
+        <meta name = "description" content = "STEP1 : 配列">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第11章　配列</span5>　　<span4>STEP1：配列⑥</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "array6.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <img src = "array6-2.png" class = "q2" alt = "コードの実行結果">
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>(1) Ball型のオブジェクトを生成し、配列ballsのi番目に格納してください。</li>
+                        <li>    Ballクラスはx座標とy座標、塗りつぶす色のパラメータを順に受け取って円を描画します。</li>
+                        <li>    繰り返しの回数ごとにx座標が40増加し、y座標はそのまま、cの値は20増加させてください。</li>
+                        <li>(2) ballsのi番目の要素を表示させてください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        例 <span1>Apple</span1>型のオブジェクトを生成し、配列<span2>apples</span2>の0番目の要素に格納する<br>
+                        <span2>apples</span2>[0] = new <span1>Apple</span1>(パラメータ1, パラメータ2, ... パラメータn);
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "URL">次の章へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "balls[i] = new Ball(x + i * 40, y, c + i * 20);">
+                            <input type = "hidden" name = "Canswer" value = "balls[i].display();">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
