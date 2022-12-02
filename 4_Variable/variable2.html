@@ -46,27 +46,28 @@
                         (2)　実行結果をよくみて考えてみよう！<br>
                         lの値　：　<span1>円の直径</span1><br>
                          円はどんどん<span2>大きく</span2>なっているので、<br>
-                         l = l + <span2>変数;</span2>　と表す<br>
-                         上の<span2>変数</span2>に当てはめるのは何か、円がどのくらい大きくなっているのかに注目して考えてみよう
+                         l = l + <span2>変数;</span2>　と表す。<br>
+                         上の<span2>変数</span2>に当てはめるのは何か、円がどのくらい大きくなっているのかに注目して考えてみよう。
                         </p>
 
                    </div>
                 </div>
 
-                <form>
+                <form name = "answerForm">
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
+
                         <label for = "text1">(1)<input size = "3" type = "text" name = "answer" readonly class = "answern"><input name = "Judgement" value = "" class = "J" disabled></label>
-                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ア";'><span6>ア： int step, x, y, l</span6>
-                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "イ";'><span6>イ： int step x y l;</span6><br>
-                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ウ";'><span6>ウ： int step, x, y, l;</span6>
-                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "エ";'><span6>エ： float step, x, y, l;</span6>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ア";'><span6>ア： int step, x, y, l;</span6>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "イ";'><span6>イ： int step x y l;</span6>
+                        <input type = "radio" name = "a1" onclick = 'answer[0].value = "ウ";'><span6>ウ： float step, x, y, l;</span6>
+
                         <label for="text2">(2)<input size = "3" type = "text" name = "answer" readonly class = "answern"><input name="Judgement" value="" class="J" disabled></label>
-                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ア";'><span6>ア： l = l + step;</span6>
-                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "イ";'><span6>イ： l = l - step;</span6><br>
-                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ウ";'><span6>ウ： l = l + x;</span6>　 　
-                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "エ";'><span6>エ： l = l + y;</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ア";'><span6>ア： l = l + x;　　　</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "イ";'><span6>イ： l = l + step;</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "ウ";'><span6>ウ： l = l + y;　　　</span6>
+                        <input type = "radio" name = "a2" onclick = 'answer[1].value = "エ";'><span6>エ： l = l - step;</span6>
             
                         
                        
@@ -87,8 +88,8 @@
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "ウ">
                             <input type = "hidden" name = "Canswer" value = "ア">
+                            <input type = "hidden" name = "Canswer" value = "イ">
                         </div>
                   
                 </form>
