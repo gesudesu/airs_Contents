@@ -2,14 +2,14 @@
 <html lang = "ja">
     <head>
         <meta charset = "utf-8">
-        <title>STEP2 : 回転②</title>
+        <title>STEP4 : 章末問題</title>
         <meta name = "description" content = "">
         <link rel = "stylesheet" href = "template.css">
         <script language = "JavaScript" src = "template2.js"></script>
     </head>
 
     <header>
-        <h1><span5>第6章　移動・回転・伸縮</span5>　　<span4>STEP4：乱数の生成</span4></h1>
+        <h1><span5>第6章　移動・回転・伸縮</span5>　　<span4>STEP4：章末問題</span4></h1>
     </header>
 
     <body>
@@ -28,9 +28,10 @@
                 <div class = "question-sentence">
                     <h2>問題文</h2>
                     <ul class="question-nav">
-                        <li>左図は、位置、色、大きさ、角度をランダムにした四角形を生成するプログラムです。</li>
-                        <li>(1) 位置をランダムにして表示するプログラムを書いてください。</li>
-                        <li>(2) 大きさを3未満の間でランダムにして表示するプログラムを書いてください。</li>
+                        <li>左図は、四角形を少しずつ回転させて重ねて表示するプログラムです。</li>
+                        <li>(1) 四角形の座標を中心に指定するプログラムを埋めてください。</li>
+                        <li>(2) int型の変数iを宣言して、四角形を4つ表示するプログラムを埋めてください。</li>
+                        <li>(3) 実行結果のように描画するために、四角形を回転させてください。</li>
                     </ul>
 
                     
@@ -41,24 +42,19 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        乱数を生成したい場合は、<span1>random</span1>を用いる。<br>
-                        random(X)：X未満の値を1つ生成する。<br>
+                        (1)　座標を指定する際は、<span1>rectMode</span1>を使う<br>
+                        今回は、中心に指定するので<span1>(CENTER)</span1>と指定する<br>
                         <br>
-                        (1)　座標の移動は、translate<br>
-                        横幅、縦幅の中から、ランダムに指定するため<br>
-                        <span2>(random(width), random(height))</span2>とかく
-                            
-                        (2)　座標の伸縮は、<span1>scale</span1>を用いる。<br>
-                        3未満の間で、ランダムに反映したいため<br>
-                        <span2>random(3)</span2>とかく<br>
-                        あとは、<span1>scale</span1>に当てはめるだけ。
-
+                        (2)　繰り返しの処理は、第4章の変数を思い出してやってみよう！<br>
+                        <br>
+                        (3)　座標を回転させるときには、<span1>rotate</span1>を用いる<br>
+                        rotateの角度をどのくらいにすると、図形のように表示されるのか考えてみよう！
                      </p>
 
                    </div>
                 </div>
 
-                <form>
+                <form name = "answerForm">
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
@@ -77,14 +73,15 @@
                     
                         <div class = "d">
                             <a class = "button3" href = "解説ページへのURL">解説</a>
-                            <a class = "button4" href = "scale1.html">次の問題へ</a>
+                            <a class = "button4" href = "translate5.html">次の問題へ</a>
                         </div>
                         </div>
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "translate(random(width), random(height));">
-                            <input type = "hidden" name = "Canswer" value = "scale(random(3));">
+                            <input type = "hidden" name = "Canswer" value = "rectMode(CENTER);">
+                            <input type = "hidden" name = "Canswer" value = "int i = 0; i < 4; i++">
+                            <input type = "hidden" name = "Canswer" value = "rotate(PI/8);">
                         </div>
                   
                 </form>

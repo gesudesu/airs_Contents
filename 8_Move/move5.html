@@ -2,14 +2,14 @@
 <html lang = "ja">
     <head>
         <meta charset = "utf-8">
-        <title>STEP2 : 回転②</title>
+        <title>STEP5 : 乱数の生成</title>
         <meta name = "description" content = "">
         <link rel = "stylesheet" href = "template.css">
         <script language = "JavaScript" src = "template2.js"></script>
     </head>
 
     <header>
-        <h1><span5>第6章　移動・回転・伸縮</span5>　　<span4>STEP2：回転②</span4></h1>
+        <h1><span5>第8章　動き</span5>　　<span4>STEP5：乱数の生成</span4></h1>
     </header>
 
     <body>
@@ -18,9 +18,9 @@
 
              <question-code>
                 <h2>問題のコード</h2>
-                <img src = "translate4.png" class = "q1" alt = "プログラムのコード画面">
+                <img src = "move5.png" class = "q1" alt = "プログラムのコード画面">
                 <h3>プログラムの実行画面</h3>
-                <img src = "translate4-2.png" class = "q2" alt = "コードの実行結果">
+                <video src="move5.mp4" class = "q2" loop autoplay muted alt = "プログラムの実行結果"></video>
              </question-code>
 
              <question>
@@ -28,9 +28,9 @@
                 <div class = "question-sentence">
                     <h2>問題文</h2>
                     <ul class="question-nav">
-                        <li>左図は、マウスの位置にTDUという文字を回転させて表示するプログラムです。</li>
-                        <li>(1) 文字の座標がマウスの位置に表示されるようにしてください。</li>
-                        <li>(2) 文字を回転させるプログラムを書いてください。</li>
+                        <li>左図は、位置、色、大きさ、角度をランダムにした四角形を生成するプログラムです。</li>
+                        <li>(1) 位置をランダムにして表示するプログラムを書いてください。</li>
+                        <li>(2) 大きさを3未満の間でランダムにして表示するプログラムを書いてください。</li>
                     </ul>
 
                     
@@ -41,13 +41,18 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        draw関数が実行される度に、座標の移動はリセットされる<br>
-                        (1)　マウスの位置は、<span1>(mouseX, mouseY)</span1>と表す<br>
+                        乱数を生成したい場合は、<span1>random</span1>を用いる。<br>
+                        random(X)：X未満の値を1つ生成する。<br>
                         <br>
-                        (2)　座標を回転させるときには、<span1>rotate</span1>を用いる<br>
-                        今回の問題では、0.05という値のfloat型の変数angleが宣言されている<br>
-                        この数値は、回転のスピードを表す<br>
-                        このangleをrotateに当てはめてみよう！
+                        (1)　座標の移動は、translate<br>
+                        横幅、縦幅の中から、ランダムに指定するため<br>
+                        <span2>(random(width), random(height))</span2>とかく
+                            
+                        (2)　座標の伸縮は、<span1>scale</span1>を用いる。<br>
+                        3未満の間で、ランダムに反映したいため<br>
+                        <span2>random(3)</span2>とかく<br>
+                        あとは、<span1>scale</span1>に当てはめるだけ。
+
                      </p>
 
                    </div>
@@ -72,14 +77,14 @@
                     
                         <div class = "d">
                             <a class = "button3" href = "解説ページへのURL">解説</a>
-                            <a class = "button4" href = "translate5.html">次の問題へ</a>
+                            <a class = "button4" href = "move6.html">次の問題へ</a>
                         </div>
                         </div>
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "translate(mouseX, mouseY);">
-                            <input type = "hidden" name = "Canswer" value = "rotate(angle);">
+                            <input type = "hidden" name = "Canswer" value = "translate(random(width), random(height));">
+                            <input type = "hidden" name = "Canswer" value = "scale(random(3));">
                         </div>
                   
                 </form>

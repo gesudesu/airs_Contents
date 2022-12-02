@@ -2,14 +2,14 @@
 <html lang = "ja">
     <head>
         <meta charset = "utf-8">
-        <title>STEP2 : 回転②</title>
+        <title>STEP1 : 動き① </title>
         <meta name = "description" content = "">
         <link rel = "stylesheet" href = "template.css">
         <script language = "JavaScript" src = "template2.js"></script>
     </head>
 
     <header>
-        <h1><span5>第6章　移動・回転・伸縮</span5>　　<span4>STEP2：回転②</span4></h1>
+        <h1><span5>第8章　動き</span5>　　<span4>STEP1：動き①</span4></h1>
     </header>
 
     <body>
@@ -17,10 +17,10 @@
         <div class = "test-contents">
 
              <question-code>
-                <h2>問題のコード</h2>
-                <img src = "translate4.png" class = "q1" alt = "プログラムのコード画面">
+                <h2>問題コード</h2>
+                <img src = "move1.png" class = "q1" alt = "プログラムのコード画面">
                 <h3>プログラムの実行画面</h3>
-                <img src = "translate4-2.png" class = "q2" alt = "コードの実行結果">
+                <video src="move1.mp4" class = "q2" loop autoplay muted alt = "プログラムの実行結果"></video>
              </question-code>
 
              <question>
@@ -28,9 +28,11 @@
                 <div class = "question-sentence">
                     <h2>問題文</h2>
                     <ul class="question-nav">
-                        <li>左図は、マウスの位置にTDUという文字を回転させて表示するプログラムです。</li>
-                        <li>(1) 文字の座標がマウスの位置に表示されるようにしてください。</li>
-                        <li>(2) 文字を回転させるプログラムを書いてください。</li>
+                        <li>左図は、円を左から右へ移動させるプログラムです。<br>
+                        円が画面から消えた場合は、左から戻って来るようにします。</li>
+                        <li>(1) float型の変数speedを宣言し、2.0という値を代入してください。</li>
+                        <li>(2) xに先ほど宣言したspeedを加算するプログラムを書いてください。</li>
+                        <li>(3) 円を左端に戻すプログラムを書いてください。</li>
                     </ul>
 
                     
@@ -41,13 +43,17 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        draw関数が実行される度に、座標の移動はリセットされる<br>
-                        (1)　マウスの位置は、<span1>(mouseX, mouseY)</span1>と表す<br>
-                        <br>
-                        (2)　座標を回転させるときには、<span1>rotate</span1>を用いる<br>
-                        今回の問題では、0.05という値のfloat型の変数angleが宣言されている<br>
-                        この数値は、回転のスピードを表す<br>
-                        このangleをrotateに当てはめてみよう！
+                         (1)　変数の宣言は、第4章で学んだ通りです<br>
+                         float型の変数にすることによって、細かい動きを表現することができます<br>
+
+                         (2)　draw()が実行するたびに、図形の位置を表す変数xはspeed分増加していくようにしたい<br>
+                         変数に値を加算する場合は、<br>
+                         <span>変数 += 値;</span>と表す<br>
+
+                         (3)　円が画面から消えたら、左から戻ってくるようにする条件式です<br>
+                         xがどの位置になったら、左端から円が出てくるようになるのか考えてみよう<br>
+                         円の中心座標がは(x,y)になるが、x = 0; にした場合　半円見えた状態で戻ってしまう<br>
+                         そのため、<span1>円の中心から、半径をひく</span1>ことで、左端から円が戻ってくるような動きを再現できる
                      </p>
 
                    </div>
@@ -61,6 +67,8 @@
                         <input type="text" placeholder="解答を入力" name="answer">
                         <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
                         <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
 
                         
                     
@@ -72,14 +80,15 @@
                     
                         <div class = "d">
                             <a class = "button3" href = "解説ページへのURL">解説</a>
-                            <a class = "button4" href = "translate5.html">次の問題へ</a>
+                            <a class = "button4" href = "move2.html">次の問題へ</a>
                         </div>
                         </div>
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "translate(mouseX, mouseY);">
-                            <input type = "hidden" name = "Canswer" value = "rotate(angle);">
+                            <input type = "hidden" name = "Canswer" value = "float speed = 2.0;">
+                            <input type = "hidden" name = "Canswer" value = "x += speed;">
+                            <input type = "hidden" name = "Canswer" value = "x = -radius/2;"
                         </div>
                   
                 </form>

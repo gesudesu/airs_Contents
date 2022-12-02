@@ -49,7 +49,6 @@ question-code {
     justify-content: center;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    
 }
 
 question {
@@ -186,7 +185,7 @@ span3{
     margin-top: 5%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-}
+}  
 
 /*　判定結果の表示　*/
 .J{
@@ -197,7 +196,6 @@ span3{
     margin-top: -10px;
     font-weight: bold;
     background-color: white;
-    margin-left: 2%;
 }
 
 /*　解答部分　*/
@@ -208,25 +206,13 @@ label{
     margin-top: 2%;
 }
 
-.answern{
-    margin-left: 2%;
-    border: 1px solid white;
-    color:white;
-    font-weight: bold;
-}
-
-span6{
-    font-size: 120%;
-}
-
 /*　解答の入力フォーム　*/
 input{
-    display:inline-block;
-    margin-left: 5%;
-    margin-top: 4%;
     border:2px solid black;
-    font-size: 1.2rem;    
-    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    margin-top: 1%;
   }
 
 #sample{

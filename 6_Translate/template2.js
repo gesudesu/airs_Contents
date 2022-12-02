@@ -35,3 +35,16 @@ function Answer(formp){
 
 }
 }
+
+//Enterキーでの処理
+currentFNo = 0;
+function nextForm()
+{
+         if(event.keyCode == 13)
+         {
+            currentFNo++;
+            currentFNo %= document.answerForm.elements.length;
+            document.answerForm[currentFNo].focus();
+         }
+}
+window.document.onkeydown = nextForm

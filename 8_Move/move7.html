@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>STEP7 : 章末問題②</title>
+        <meta name = "description" content = "">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第8章　動き</span5>　　<span4>STEP6：章末問題②</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題のコード</h2>
+                <img src = "move7.png" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <video src="move7.mp4" class = "q2" loop autoplay muted alt = "プログラムの実行結果"></video>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>左図は、サッカーボールの画像を動かして、端に行くたびに向きを変えて反射させるプログラムです。</li>
+                        <li>(1) ボールが端に行くと、反射させる条件式を埋めてください。<br>
+                        （変数　不等号　数値　の順でプログラムを書いてください）<br>
+                         例）　y < 100</li>
+                        <li>(2) 端に行く度に、ボールの動く方向を変更する処理を埋めてください。</li>
+                        <li>(3) 反射したと同時にボールの向きも変える条件式を埋めてください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        (1)　端に行く度に反射させるプログラムです<br>
+                        x + 50 > width　では、右端に来たときという条件を表している<br>
+                        条件式にある　||　は、左辺と右辺どちらかが真のときを意味する<br>
+                        つまり、左端（xが0より小さい）に来たときという条件を書けば良い！<br>
+                        <br>
+                        (2)　STEP2と同じく、跳ね返りを表現するプログラムです<br>
+                        向きを変更するには、移動に関係している変数の符号を変えてあげればよい<br>
+                        移動に関係している変数は、<span1>speed</span1><br>
+                        通常時　x += speed　により、xの値が徐々に増えていくようになっているが、<br>
+                        このスピードの符号を条件式が真のとき（跳ね返るたび）speedを-speedに変更すれば良い
+                        <br>
+                        (3)　反射して動く際に、ボールの向きを変えるという条件式です<br>
+                        プログラムを見ると、条件式が真の時に、正の向き<br>
+                        条件式が偽の時、負の向きに変更されているということがわかる<br>
+                        ボールの向きが正の向きなのは、どういう時で、負の向きに変更されているのがどういう時なのかを考える<br>
+                        正の向き　→ ボールが右に向かって動いている　→ speedが<span1>正の時</span1><br>
+                        負の向き　→ ボールが左に向かって動いている　→ speedが<span2>負の時</span2><br>
+                        つまり、条件式には、<span1>speedが正の時</span1>と表すプログラムを適用する
+                     </p>
+
+                   </div>
+                </div>
+
+                <form name = "answerForm">
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                    
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "move8.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "x < 0">
+                            <input type = "hidden" name = "Canswer" value = "speed = -speed;">
+                            <input type = "hidden" name = "Canswer" value = "speed > 0.0">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+
+       
+       </script>
+    </body>
+
+
+
+</html>

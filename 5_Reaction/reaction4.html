@@ -30,7 +30,7 @@
                     <ul class="question-nav">
                         <li>左図は、線を20本描画する（11個本目からの線を赤で描く）プログラムです。</li>
                         <li>(1) int型の変数iを宣言し、線が20本描画されるようにfor文の中を埋めてください。</li>
-                        <li>(2) 10本目からの線を赤で描くように、条件式の中を埋めてください。</li>
+                        <li>(2) 11本目からの線を赤で描くように、条件式の中を埋めてください。</li>
                         <li>(3) 線を赤く描画するプログラムを書いてください。</li>
                     </ul>
 
@@ -42,23 +42,24 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        (1)　第4章の内容のため、省略<br>
-                            
-                        (2)　ifは、以下のように書く<br>
-                            if(条件式){<br>
+                         (1)　第4章の内容のため、省略<br>
+                            <br>
+                         (2)　ifは、以下のように書く<br>
+                         if(条件式){<br>
                             　　　　条件式が<span1>真(TRUE)</span1>の時に実行する<br>
-                            }else{<br>
+                         }else{<br>
                                 　　条件式が<span2>偽(FALSE)</span2>の時に実行する<br>
-                            }<br>
-                            条件式が偽(FALSE)の時に何もしない場合には、else以降は省略可能<br>
-                        (3)　線の色は、<span1>stroke</span1>によって変更する<br>
-                        stroke(<span1>RED</span1>, <span3>GREEN</span3>, <span2>BLUE</span2>);
+                         }<br>
+                         条件式が偽(FALSE)の時に何もしない場合には、else以降は省略可能<br>
+                         <br>
+                         (3)　線の色は、<span1>stroke</span1>によって変更する<br>
+                         stroke(<span1>RED</span1>, <span3>GREEN</span3>, <span2>BLUE</span2>);
                      </p>
 
                    </div>
                 </div>
 
-                <form>
+                <form name = "answerForm">
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
@@ -88,7 +89,7 @@
                         <div class = "answer">
                             <input type = "hidden" name = "Canswer" value = "int i = 1; i < 20; i++">
                             <input type = "hidden" name = "Canswer" value = "i > 10">
-                            <input type = "hidden" name = "Canswer" value = "stroke(255, 0, 0);"
+                            <input type = "hidden" name = "Canswer" value = "stroke(255, 0, 0);">
                         </div>
                   
                 </form>

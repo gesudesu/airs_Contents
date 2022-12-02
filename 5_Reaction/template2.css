@@ -49,7 +49,7 @@ question-code {
     justify-content: center;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    height: 100%;
+    
 }
 
 question {
@@ -60,7 +60,6 @@ question {
 h2 {
     width: 100%;
     font-size: 120%;
-    
     text-align: center;
     margin-top: -10px;
     margin-left: -1px;
@@ -210,7 +209,9 @@ label{
 
 .answern{
     margin-left: 2%;
-    border: 1px solid #56569d;
+    border: 1px solid white;
+    color:white;
+    font-weight: bold;
 }
 
 span6{
@@ -219,10 +220,11 @@ span6{
 
 /*　解答の入力フォーム　*/
 input{
-    border:2px solid black;
-    margin-left: 20%;
-    font-size: 1.2rem;
+    display:inline-block;
+    margin-left: 19%;
     margin-top: 4%;
+    border:2px solid black;
+    font-size: 1.2rem;    
     text-align: center;
   }
 
