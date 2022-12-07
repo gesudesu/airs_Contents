@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP1 : Table④ </title>
+        <meta name = "description" content = "STEP1 : Table">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第11章　データ</span5>　　<span4>STEP1：Table④</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "data4.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>・CSVファイルを読み込んで表示するプログラムです。</li>
+                        <li>int型の変数を定義し、CSVファイルの内容を格納します。</li>
+                        <li>(1) int型の変数valueを宣言し、foodのi行目・1列目に記載された数を読み込ませてください。</li>
+                        <li>(2) int型の変数calorieを宣言し、foodのi行目・2列目に記載された数を読み込ませてください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        指定した行と列で値を取り出したいときは、getInt()を利用します。<br>
+                        int 変数名 = オブジェクト名.getInt(行の数, 列の数);<br>
+                        例　変数<span2>suzuki</span2>に<span1>t1</span1>の<span3>0行目</span3>, <span3>2列目</span3>の数を読み込ませる<br>
+                        int <span2>suzuki</span2> = <span1>t1</span1>.getInt(<span3>0</span3>, <span3>2</span3>);<br>
+                        ここで扱われる行の数、列の数はどちらも<span1>0から始まります。</span1>
+                     </p>
+
+                   </div>
+                </div>
+
+                <form>
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "解説ページへのURL">解説</a>
+                            <a class = "button4" href = "data5.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "int value = food.getInt(i, 1);">
+                            <input type = "hidden" name = "Canswer" value = "int calorie = food.getInt(i, 2);">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
