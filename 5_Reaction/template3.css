@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    background-color: #f3f3f3;
+}
+
+header {
+    font-size: 120%;
+    color: white;
+    background-color: #56569d;
+    margin-top: -28px;
+    width: 100%;
+    box-shadow: 0 4px 0 #BBBBBB;
+}
+
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height:1.7;
+}
+
+h1{
+    margin-left: 5%;
+}
+
+span5{
+    font-size: 25px;
+  
+}
+
+span4 {
+    font-size: 20px;
+  
+}
+
+/*　コンテンツ部分　*/
+.test-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*　問題のコード　*/
+question-code {
+    width: 45%;
+    margin-left: 1%;
+    margin-top: 10px;
+    background-color: white;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+question {
+    width: 50%;
+}
+
+/*　問題のコード（文）　*/
+h2 {
+    width: 100%;
+    font-size: 120%;
+    
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -1px;
+    background-color: #56569d;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*　問題のコード（画像）　*/
+.q1 {
+    object-fit: cover;
+    margin-left: 4%;
+    width: 70%;
+    margin-top: -30px;
+    padding: 15px;
+}
+
+/*　プログラムの実行結果（文）　*/
+h3 {
+    margin-top: -10px;
+    text-align: center;
+    background-color: #56569d;
+    color: white;
+}
+
+/*　プログラムの実行結果（画像）*/
+.q2 {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+/*　問題文　*/
+.question-sentence {
+   
+    background-color: white;
+    margin-top: 1.5%;
+    margin-left: -2%;
+  
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*　リスト部分　*/
+li {
+    margin-bottom: 5px;
+}
+
+/*　リストの中身　*/
+ul {
+    list-style-type: none;
+    font-size: 110%;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: -1%;
+}
+
+/*　ヒントボタン　*/
+.hint {
+    display: inline-block;
+    padding: 2%;
+    background-color: #ffd150;
+    box-shadow: 0 5px 0 #ffc41d;
+    border-radius: 60px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    /* 文字の下線を消す */
+    margin-left: 40%;
+    margin-bottom: 2%;
+    width: 20%;
+    font-size: 90%;
+}
+
+/* ホバー時 */
+.hint:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/*　ヒントの内容　*/
+.hint-content {
+    border-top: 3px solid #56569d;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*　ヒントの表示・非表示　*/
+.hin{
+    display: none;
+}
+
+
+/*　ヒント　*/
+span0{
+    font-size: 110%;
+    font-weight: bold;
+}
+/*　ヒントの色変更　*/
+span1 {
+    font-weight: bold;
+    color: red;
+}
+
+/*　ヒントの色変更　*/
+span2 {
+    font-weight: bold;
+    color: blue;
+}
+
+span3{
+    font-weight: bold;
+    color: green;
+}
+
+.answercheck{
+    width: 102%;
+    margin-left: -2%;
+    background-color: white;
+    margin-top: 5%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*　判定結果の表示　*/
+.J{
+    width: 100px;
+    border:none;
+    font-size: 25px;
+    color: red;
+    margin-top: -10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+/*　解答部分　*/
+label{
+    display: block;
+    font-size: 1.2rem;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/*　解答の入力フォーム　*/
+input{
+    border:2px solid black;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    margin-top: 1%;
+  }
+
+#sample{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+/*　ヒントボタン　*/
+.button1{
+    display: inline-block;
+    padding: 2%;
+    background-color: #e3364a;
+    box-shadow: 0 5px 0 #ca1c30;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 20%;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+ /* ホバー時 */
+.button1:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/*　解答ボタン　*/
+.button2{
+    display: inline-block;
+    padding: 2%;
+    background-color: #61b0e2;
+    box-shadow: 0 5px 0 #369ada;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 3%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    width: 20%;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+ /* ホバー時 */
+.button2:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* 解説/次のボタンの表示非表示　*/
+.d{
+    margin-top: 5%;
+    display: none;
+    margin-left: 20%;
+}
+
+/*　解説ボタン　*/
+.button3 {
+    display: inline-block;
+    padding: 2%;
+    text-align: center;
+    background-color: #34b496;
+    box-shadow: 0 5px 0 #298c75;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    width: 20%;
+    font-size: 90%;
+    font-weight: bold;
+}
+  
+  /* ホバー時 */
+.button3:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.button4 {
+    text-align: center;
+    padding: 2%;
+    margin-left: 63%;
+    display: inline-block;
+    background-color: #34b496;
+    box-shadow: 0 5px 0 #298c75;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    width:20%;
+    font-size: 90%;
+    font-weight: bold;
+}
+  
+  /* ホバー時 */
+.button4:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+
