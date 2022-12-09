@@ -2,14 +2,14 @@
 <html lang = "ja">
     <head>
         <meta charset = "utf-8">
-        <title> STEP1 : クラスを使ってみよう① </title>
+        <title> STEP2 : マウスを使う処理② </title>
         <meta name = "description" content = "STEP1 : 反応">
         <link rel = "stylesheet" href = "template.css">
         <script language = "JavaScript" src = "template1.js"></script>
     </head>
 
     <header>
-        <h1><span5>第10章　オブジェクト</span5>　　<span4>STEP1：クラスを使ってみよう①</span4></h1>
+        <h1><span5>第5章　反応</span5>　　<span4>STEP2：マウスを使う処理②</span4></h1>
     </header>
 
     <body>
@@ -18,10 +18,9 @@
 
              <question-code>
                 <h2>問題コード</h2>
-                <img src = "object_question_3.png" class = "q1" alt = "プログラムのコード画面">
+                <img src = "reaction2.png" class = "q1" alt = "プログラムのコード画面">
                 <h3>プログラムの実行画面</h3>
-                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
-                <span0>実行しても、まだ何も表示されません</span0>
+                <img src = "reaction2-2.png" class = "q2" alt = "コードの実行結果">
              </question-code>
 
              <question>
@@ -29,9 +28,8 @@
                 <div class = "question-sentence">
                     <h2>問題文</h2>
                     <ul class="question-nav">
-                        <li>左側の図を参考に以下の設問に答えてください</li>
-                        <li>・オブジェクトを作成するための設計図、クラス"JitterBug"を宣言します。</li>
-                        <li>(1) クラス"JitterBug"を宣言してください。</li>
+                        <li>左図は、反応①に1文追加してマウスの軌跡が残らないようにしたプログラムです。</li>
+                        <li>(1) 実行結果を参考に、マウスの軌跡が残らないように空欄を埋めてください。</li>
                     </ul>
                     
                     <input type = "button" class = "hint" value = "💡ヒント">
@@ -40,18 +38,16 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        クラスの宣言は以下のように行います。<br>
-                        　class <span1>クラス名</span1>{<br>
-                          　<span3>クラスの内容の定義</span3><br>
-                        　}<br>
-                        例　クラス"<span3>Fruit</span3>"を宣言する<br>
-                        　class <span3>Fruit</span3>{}
+                      drawブロックは、<span1>繰り返し実行する</span1><br>
+                      マウスの軌跡が残らないようにしたい<br>
+                      →<span1>drawが実行される度に背景色を繰り返し変更すれば良い</span1><br>
+                      実行結果を見ると背景が黒くなっているため、背景を黒に指定する
                      </p>
 
                    </div>
                 </div>
 
-                <form name = "answerForm">
+                <form>
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
@@ -66,13 +62,13 @@
                     
                         <div class = "d">
                             <a class = "button3" href = "解説ページへのURL">解説</a>
-                            <a class = "button4" href = "object-test_4.html">次の問題へ</a>
+                            <a class = "button4" href = "reaction3.html">次の問題へ</a>
                         </div>
                         </div>
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "class JitterBug">
+                            <input type = "hidden" name = "Canswer" value = "background(0);">
                         </div>
                   
                 </form>
