@@ -186,11 +186,12 @@ span3{
     margin-top: 5%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    
 }
 
 /*　判定結果の表示　*/
 .J{
-    width: 100px;
+    width: 15%;
     border:none;
     font-size: 25px;
     color: red;
@@ -198,6 +199,8 @@ span3{
     font-weight: bold;
     background-color: white;
     margin-left: 2%;
+    margin-top: -5%;
+    
 }
 
 /*　解答部分　*/
@@ -216,17 +219,20 @@ label{
 }
 
 span6{
+    display: block;
     font-size: 120%;
+    margin-left: 26%;
+    margin-top: -3%;
 }
 
 /*　解答の入力フォーム　*/
 input{
-    display:inline-block;
-    margin-left: 19%;
-    margin-top: 4%;
-    border:2px solid black;
-    font-size: 1.2rem;    
-    text-align: center;
+    display: block;
+    border: 0px;
+    color: white;
+    font-size: 0px;
+    margin-left: 20%;
+    margin-top: 3%;
   }
 
 #sample{
@@ -341,3 +347,12 @@ input{
 }
 
 
+.Lanswer{
+    display:block;
+    width:40%;
+    font-size: 120%;
+    background-color: white;
+    border: 0px;
+    margin-left: 30%;
+    margin-top: -4.5%;
+}
