@@ -189,13 +189,14 @@ span3{
 
 /*　判定結果の表示　*/
 .J{
-    width: 100px;
+    width: 15%;
     border:none;
-    font-size: 25px;
+    font-size: 120%;
     color: red;
     margin-top: -10px;
     font-weight: bold;
     background-color: white;
+    margin-left: -0.1%;
 }
 
 /*　解答部分　*/
@@ -216,7 +217,7 @@ input{
   }
 
 #sample{
-    font-size: 25px;
+    font-size: 120%;
     color: red;
     font-weight: bold;
 }
@@ -325,5 +326,19 @@ input{
     box-shadow: none;
     transform: translateY(5px);
 }
+
+.Lanswer{
+    display:block;
+    width:70%;
+    font-size: 120%;
+    background-color: white;
+    border:0px;
+    margin-left: 25%;
+    margin-top: -5%;
+}
+
+
+
+
 
 
