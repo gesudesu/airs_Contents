@@ -42,7 +42,8 @@
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
                         draw関数が実行される度に、座標の移動はリセットされる<br>
-                        (1)　マウスの位置は、<span1>(mouseX, mouseY)</span1>と表す<br>
+                        (1)　座標を移動させたいときは、<span1>translate</span1>を用いる<br>
+                        今回は、マウスの位置に移動させたいので、<span2>(mouseX, mouseY)</span2><br>
                         <br>
                         (2)　translateを複数回実行したとき、その効果は合成される<br>
                         今回の問題では、マウスの位置から(100, -100)移動させた位置に表示したい<br>
@@ -56,9 +57,9 @@
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
-                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled></label>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
                         <input type="text" placeholder="解答を入力" name="answer">
-                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled></label>
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
                         <input type="text" placeholder="解答を入力" name="answer">
 
                         

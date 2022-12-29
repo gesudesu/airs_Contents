@@ -2,18 +2,24 @@ function AnswerCheck(formp){
     
     let obj = document.getElementById("sample");
 
-    
+       //文字列の空白の削除
+       var Answer = formp.answer.value.replace(/\s+/g, '');
+       var Canswer = formp.Canswer.value.replace(/\s+/g, '');
 
-        if(formp.answer.value == formp.Canswer.value){  // 正誤の判定
-
+       //正誤の判定　文字ver
+        if(Answer == Canswer){ 
             obj.textContent = "　正解";
-            obj.style.color =  "#0000FF";  
-        
         }
         else
-            obj.textContent = "　不正解";
-            
-    }
+            obj.textContent = "　不正解";        
+    
+        //　正誤の判定　色を変更ver
+        if(Answer == Canswer){  
+            obj.style.color = "blue";
+        }
+        else
+            obj.style.color = "red";      
+}
 
 //正解の表示のプログラム
 function Answer(formp){
@@ -22,14 +28,13 @@ function Answer(formp){
 
     seikai_data = "";    // 正解データ作成用
     
-    
     //　正解の表示
-    seikai_data = formp.Canswer.value ; 
-    formp.answer.value = seikai_data;
-    formp.answer.style.color = "#FF0000";
-    obj.textContent = null;
+    seikai_data = formp.Canswer.value; // 正解の文字列
+    formp.Lanswer.value = seikai_data;
+    formp.Lanswer.style.color = "#FF0000";
    
 }
+
 //Enterキーでの処理
 currentFNo = 0;
 function nextForm()
