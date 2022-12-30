@@ -5,7 +5,7 @@
         <title> STEP1 : Table⑤ </title>
         <meta name = "description" content = "STEP1 : Table">
         <link rel = "stylesheet" href = "template.css">
-        <script language = "JavaScript" src = "template1.js"></script>
+        <script language = "JavaScript" src = "template.js"></script>
     </head>
 
     <header>
@@ -46,11 +46,11 @@
                    </div>
                 </div>
 
-                <form>
+                <form name = "answerForm">
     
                     <div class = "answercheck">
                         <h2>解答欄</h2>
-                        <label for="text1">(1)<span id="sample">　</span></label>
+                        <label for="text1">(1)<span id="sample">　</span><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
                         <input type="text" placeholder="解答を入力" name="answer">
                                         
                         <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
