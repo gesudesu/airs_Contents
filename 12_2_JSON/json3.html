@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP2 : JSON③ </title>
+        <meta name = "description" content = "STEP2 : JSON③">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template2.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第12章　データ</span5>　　<span4>STEP2 : JSON③</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "json3.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>・JSONファイルを読み込んで表示するプログラムです。</li>
+                        <li>それぞれのデータに合った型の変数を定義し、JSONファイルの内容を格納します。</li>
+                        <li>(1) String型の変数titleを宣言し、film.jsonの中の"title"でラベル付けされた情報を読み込ませてください。</li>
+                        <li>(2) String型の変数dirを宣言し、film.jsonの中の"director"でラベル付けされた情報を読み込ませてください。</li>
+                        <li>(3) int型の変数yearを宣言し、film.jsonの中の"year"でラベル付けされた情報を読み込ませてください。</li>
+                        <li>(4) float型の変数ratingを宣言し、film.jsonの中の"rating"でラベル付けされた情報を読み込ませてください。</li>
+                    </ul>
+
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+                
+
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        JSON形式では、格納される情報に「ラベル」という呼び名をつけます。<br>
+                        CSV形式とは異なり、情報を取り出す際にはこのラベルを利用します。<br>
+                        例　変数<span2>p1</span2>に<span1>j1</span1>の"<span3>price</span3>"ラベルがついた情報(int型)を読み込みたい<br>
+                        int <span2>p1</span2> = <span1>j1</span1>.getInt("<span3>price</span3>");<br>
+                        ※取り出す情報の型がintならgetInt()を、StringならgetString()を、floatならgetFloat()を使います。
+                     </p>
+
+                   </div>
+                </div>
+
+                <form name = "answerForm">
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(2)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(3)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                        <label for="text2">(4)<input name="Judgement" value="" class="J" disabled><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+
+                        
+                    
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "https://lapis04070.github.io/Airs_Contents_in2022/json.html">解説</a>
+                            <a class = "button4" href = "json4.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "String title = film.getString(&quot;title&quot;);">
+                            <input type = "hidden" name = "Canswer" value = "String dir = film.getString(&quot;director&quot;);">
+                            <input type = "hidden" name = "Canswer" value = "int year = film.getInt(&quot;year&quot;);">
+                            <input type = "hidden" name = "Canswer" value = "float rating = film.getFloat(&quot;rating&quot;);">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title> STEP2 : JSON① </title>
+        <meta name = "description" content = "STEP2 : JSON①">
+        <link rel = "stylesheet" href = "template.css">
+        <script language = "JavaScript" src = "template.js"></script>
+    </head>
+
+    <header>
+        <h1><span5>第12章　データ</span5>　　<span4>STEP2：JSON①</span4></h1>
+    </header>
+
+    <body>
+
+        <div class = "test-contents">
+
+             <question-code>
+                <h2>問題コード</h2>
+                <img src = "json1.PNG" class = "q1" alt = "プログラムのコード画面">
+                <h3>プログラムの実行画面</h3>
+                <!-- <img src = "arraylist1-2.png" class = "q2" alt = "コードの実行結果"> -->
+                <span0>実行しても、まだ何も表示されません</span0>
+             </question-code>
+
+             <question>
+
+                <div class = "question-sentence">
+                    <h2>問題文</h2>
+                    <ul class="question-nav">
+                        <li>・JSONファイルを読み込んで表示するプログラムです。</li>
+                        <li>(1) JSONObjectクラスのオブジェクト、filmを宣言してください。</li>
+                        <a href="appendices/film.json" download>付録：film.json(クリックするとダウンロードされます)</a>
+                    </ul>
+                    
+                    <input type = "button" class = "hint" value = "💡ヒント">
+        
+                   <div class = "hin">
+
+                     <p class = "hint-content">
+                        <span0>ヒント</span0><br>
+                        <span1>JSONObject</span1>クラスを利用すると、JSON形式のファイルを読み込んで扱うことができます。<br>
+                        <span1>JSONObject</span1> <span2>オブジェクトの名前</span2>;<br>
+                        例　JSONObjectクラスのオブジェクトj1を宣言する<br>
+                        <span1>JSONObject</span1> <span2>j1</span2>;
+                     </p>
+
+                   </div>
+                </div>
+
+                <form name = "answerForm">
+    
+                    <div class = "answercheck">
+                        <h2>解答欄</h2>
+                        <label for="text1">(1)<span id="sample">　</span><input type = "text" class = "Lanswer" name = "Lanswer" disabled></label>
+                        <input type="text" placeholder="解答を入力" name="answer">
+                                        
+                        <input type="button" class="button1" name="CHKB" value="判定" onclick="AnswerCheck(this.form);">
+                        <input type="button" class="button2" name="CHKB" value="正解の表示" onclick="Answer(this.form);">
+                        
+                    </div>
+                    
+                    
+                        <div class = "d">
+                            <a class = "button3" href = "https://lapis04070.github.io/Airs_Contents_in2022/json.html">解説</a>
+                            <a class = "button4" href = "json2.html">次の問題へ</a>
+                        </div>
+                        </div>
+
+                  
+                        <div class = "answer">
+                            <input type = "hidden" name = "Canswer" value = "JSONObject film;">
+                        </div>
+                  
+                </form>
+                    
+                
+             </question>
+
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>                
+       
+       
+       $(function(){
+        
+        $('.button1').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+
+        $('.button2').click(function(){
+            $('.d').fadeIn(1);
+        });
+       });
+
+       $(function(){
+         $('.hint').click(function(){
+
+            $('.hin').stop().fadeToggle(1000);
+         });
+       });
+       
+       
+       
+       </script>
+    </body>
+
+
+
+</html>
