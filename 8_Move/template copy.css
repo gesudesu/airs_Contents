@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-    font-size: 100%;
+    
     background-color: #f3f3f3;
 }
 
@@ -189,9 +189,9 @@ span3{
 
 /*　判定結果の表示　*/
 .J{
-    width: 15%;
+    width: 50%;
     border:none;
-    font-size: 120%;
+    font-size: 110%;
     color: red;
     margin-top: -10px;
     font-weight: bold;
@@ -202,7 +202,7 @@ span3{
 /*　解答部分　*/
 label{
     display: block;
-    font-size: 1.2rem;
+    font-size: 120%;
     margin-left: 10%;
     margin-top: 2%;
 }
@@ -212,15 +212,17 @@ input{
     border:2px solid black;
     width: 80%;
     margin-left: 10%;
-    font-size: 1.2rem;
+    font-size: 120%;
     margin-top: 1%;
   }
 
 #sample{
-    font-size: 120%;
+    font-size: 110%;
     color: red;
     font-weight: bold;
 }
+
+
 
 /*　ヒントボタン　*/
 .button1{
@@ -307,7 +309,7 @@ input{
 .button4 {
     text-align: center;
     padding: 2%;
-    margin-left: 67%;
+    margin-left: 50%;
     display: inline-block;
     background-color: #34b496;
     box-shadow: 0 5px 0 #298c75;

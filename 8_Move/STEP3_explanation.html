@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+
+<title>STEP6 解説</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="aaa.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>第5章 反応　STEP6</h1>
+<h2>解説</h2>
+<p align="left">第8章　動きのSTEP3についての解説を行います。</p>
+<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        2<br>
+	3<br>
+	4<br>
+        5<br>
+        6<br>
+	7<br>
+	8<br>
+	9<br>
+        10<br>
+        11<br>
+	12<br>
+	13<br>
+        <td width="97%" height="auto">
+		void setup(){<br>
+		<span>size(400,400); //ウインドウの大きさの指定<br>
+		<span>background(255); //背景色の指定
+		}<br>
+		<br>
+		void draw(){<br>
+		<span1>int timer = millis();</span1> //変数timerの宣言<br>
+		<br>
+		<span>if(<span1>timer < 3000</span1>){ //3秒経過した時に<br>
+		<span><span>fill(255,0,0); //色の指定<br>
+		<span>}else if{<span1>timer < 6000</span1>){ //6秒経過した時に<br>
+		<span><span>fill(0, 255, 0); //色の指定<br>
+		<span>}else{<br>
+		<span><span>fill(0, 0, 255);<br>
+		}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h4><font color="red">(1)　millis()の解説</font></h4>
+関数millis()を用いることで、プログラムをスタートしてから経過時間をカウントして値を返すことができます。<br>
+ここでは、millis()関数を用いた変数timerを宣言しています。<br>
+<h4><font color="red">(2)　timer < 3000の解説</font></h4>
+時間(timer)が3000msまでの間、画面内の円の色が<font color="red">赤色</font>に変更されるコードになっております。<br>
+<div align="center">
+  <table border="1" style="border-collapse: collapse" width="100%">
+    <tbody>
+      <tr>
+        <td width="auto" height="auto">
+	1<br>
+        <td width="97%" height="auto">
+		<font color="red">fill(255,0,0)</font>;</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<img src="redellipse.png" alt="青色"  align="left">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4><font color="red">(3)　timer < 6000の解説</font></h4>
+else if{}で先ほどの条件とは違う条件を適用します。<br>
+次の条件式は、時間(timer)が6000msまでの間、画面内の円の色が<font color="green">緑色</font>に変更されるコードになっております。<br>
+<div align="center">
+	<table border="1" style="border-collapse: collapse" width="100%">
+	  <tbody>
+		<tr>
+		  <td width="auto" height="auto">
+	  1<br>
+		  <td width="97%" height="auto">
+		  <font color="red">fill(0,255,0)</font>;</td>
+		</tr>
+	  </tbody>
+	</table>
+  </div>
+  <img src="greenellipse.png" alt="青色"  align="left">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+<br>
+最後のelseでは、timer<3000でも、timer<6000でもない時ということを条件として表しています。<br>
+
+
+</body>
+</html>
