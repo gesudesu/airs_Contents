@@ -43,12 +43,8 @@
 
                      <p class = "hint-content">
                         <span0>ヒント</span0><br>
-                        今回は"tempX", "tempY"の2つの仮引数を作り、これをOwlクラスのオブジェクトが宣言された際の仮のパラメータとして与えます。<br>
-                        例　Fruit型のオブジェクトに、パラメータとして「重さ」「値段」の順に仮の値を与える<br>
-                        Fruit(int tempWeight, int tempPrice){<br>
-                            weight = tempWeight;<br>
-                            price = tempPrice;<br>
-                        }
+                        ArrayListにオブジェクトを追加する方法<br>
+                        <span2>配列の名前</span2>.add(new <span1>オブジェクトのクラス名</span1>>(<span3>パラメータ1</span3>, ... <span3>パラメータn</span3>));<br>
                      </p>
 
                    </div>
@@ -81,9 +77,9 @@
 
                   
                         <div class = "answer">
-                            <input type = "hidden" name = "Canswer" value = "int tempX">
-                            <input type = "hidden" name = "Canswer" value = "int tempY">
-                            <input type = "hidden" name = "Canswer" value = "x = tempX;">
+                            <input type = "hidden" name = "Canswer" value = "arrayList.add(new Owl(110, 110));">
+                            <input type = "hidden" name = "Canswer" value = "arrayList.add(new Owl(180, 110));">
+                            <input type = "hidden" name = "Canswer" value = "arrayList.add(new Owl(250, 110));">
                         </div>
                   
                 </form>
