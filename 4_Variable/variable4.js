@@ -38,6 +38,7 @@ function Answer(formp){
        seikai_data = formp.Canswer[n].value ; 
        formp.Lanswer[n].value = seikai_data;
        formp.Lanswer[n].style.color = "#FF0000";
+       formp.Lanswer[1].value = "i < 400;" + "　or　i <= 399;";
     
     
 }

@@ -32,9 +32,8 @@ function Answer(formp){
     
     //　正解の表示
     seikai_data = formp.Canswer.value; // 正解の文字列
-    formp.Lanswer.value = seikai_data;
+    formp.Lanswer.value = seikai_data + "　or　i = 0; i<=2; i++";
     formp.Lanswer.style.color = "#FF0000";
-   
 }
 
 //Enterキーでの処理
